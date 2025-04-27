@@ -1,0 +1,86 @@
+/* Calendar CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Khmer OS", Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  header,
+  footer {
+    background-color: #0088cc;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+  main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  .calendar-container {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .month-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .month-header h2 {
+    font-size: 1.5rem;
+    color: #0088cc;
+  }
+  
+  .month-header button {
+    background-color: #0088cc;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+  }
+  
+  thead th {
+    background-color: #f0f0f0;
+    padding: 0.75rem;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  tbody td {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    height: 60px;
+    vertical-align: middle;
+    transition: background 0.3s;
+  }
+  
+  tbody td:hover {
+    background-color: #e0f7fa;
+    cursor: pointer;
+  }
+  
